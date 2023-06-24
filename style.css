@@ -21,28 +21,15 @@ body{
    text-align: center;
    padding-top: 24px;
 }
-
-#nextBtn{
-    position: absolute;
-    top: 450px;
-    left: 870px;
-}
-
-#prevBtn{
-    position: absolute;
-    top: 450px;
-    left: 300px;
-}
-
-#randomBtn{
-    position: absolute;
-    top: 450px;
-    left: 580px;
+.buttons{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 220px;
 }
 
 button{
     height: 35px;
-    width: 100px;
+    width: 10vw;
     font-size: 1.4rem;
     font-style: italic;
     font-weight: 600;
@@ -56,10 +43,14 @@ button:hover{
     cursor: pointer;
 }
 
+button:active{
+    transform: scale(0.8);
+}
+
 #jokes{
+    height: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 #jokes h3{
